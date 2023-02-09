@@ -4,10 +4,15 @@ const sequelize = require('../config/connection');
 class Comment extends Model {}
 
 Comment.init({
-    // add properites here, ex:
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true
+    },
     comment: {
-         type: DataTypes.TEXT,
-         allowNull:false
+      type: DataTypes.TEXT,
+      allowNull: false
     }
 },{
     sequelize

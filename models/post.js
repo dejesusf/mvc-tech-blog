@@ -4,15 +4,20 @@ const sequelize = require('../config/connection');
 class Post extends Model {}
 
 Post.init({
-    // add properites here, ex:
+    id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+    },
     title: {
          type: DataTypes.STRING,
-         allowNull:false,
-         unique:true,
+         allowNull: false,
+         unique: true,
     },
-    content:{
-        type:DataTypes.TEXT,
-        allowNull:false,
+    content: {
+        type: DataTypes.TEXT,
+        allowNull: false,
     }
 },{
     sequelize
