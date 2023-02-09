@@ -1,0 +1,14 @@
+<h1>HI, {{username}}!</h1>
+<h2>ADD A POST</h2>
+<form id="new-post-form">
+  <textarea id="post-input"></textarea>
+  <button>POST</button>
+</form>
+<h2>MY POSTS</h2>
+{{#each Post}}
+  <section class="post-box">
+  <p>text: </p>
+</section>
+{{/each}}
+
+<script src="/js/profile.js"></script>
