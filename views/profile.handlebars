@@ -1,13 +1,15 @@
-<h1>HI, {{username}}!</h1>
+<h1>Hi, {{username}}!</h1>
 <h2>ADD A POST</h2>
 <form id="new-post-form">
-  <textarea id="post-input"></textarea>
+  <textarea id="title-input" placeholder="title"></textarea>
+  <textarea id="post-input" placeholder="post"></textarea>
   <button>POST</button>
 </form>
 <h2>MY POSTS</h2>
 {{#each Post}}
   <section class="post-box">
-  <p>text: </p>
+    <p>{{title}}</p>
+    <p>{{post}}</p>
 </section>
 {{/each}}
 

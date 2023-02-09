@@ -52,7 +52,7 @@ router.delete("/:id",(req,res) => {
     }
     Post.destroy({
       where:{
-        id:req.params.id,
+        id: req.params.id,
       }
     }).then(postData => {
       res.json(postData)

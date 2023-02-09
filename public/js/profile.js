@@ -1,7 +1,8 @@
 document.querySelector("#new-post-form").addEventListener("submit",e=>{
   e.preventDefault();
   const postObj = {
-      post: document.querySelector("#post-input").value
+    title: document.querySelector("#title-input").value,
+    post: document.querySelector("#post-input").value
   }
   console.log(postObj)
   fetch("/api/posts",{

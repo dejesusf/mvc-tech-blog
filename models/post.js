@@ -15,7 +15,7 @@ Post.init({
          allowNull: false,
          unique: true,
     },
-    content: {
+    post: {
         type: DataTypes.TEXT,
         allowNull: false,
     }
