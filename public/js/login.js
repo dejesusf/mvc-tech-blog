@@ -15,7 +15,7 @@ document.querySelector("#loginForm").addEventListener("submit",e=>{
       if(res.ok){
          location.href="/profile"
       } else {
-          alert("Username/email or password is incorrect! Try again.")
+          alert("Username/password is incorrect! Try again.")
       }
   })
 })

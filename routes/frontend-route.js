@@ -10,7 +10,7 @@ router.get("/", (req,res) => {
     const hbsPost = postData.map(post => post.toJSON())
     console.log('==============================')
     console.log(hbsPost)
-    res.render("home", {
+    res.render("login", {
       allPost: hbsPost
     })
   })
@@ -22,6 +22,14 @@ router.get("/login", (req,res) => {
 
 router.get("/signup",(req,res) => {
     res.render("signup")
+})
+
+router.get("/",(req,res) => {
+  res.render("home")
+})
+
+router.get("/home",(req,res) => {
+  res.render("home")
 })
 
 router.get("/profile",(req,res) => {
