@@ -5,6 +5,8 @@ Using a lot of dependencies, we were given the task to create a blog that users 
 
 This application is currently incomplete. I didn't have a chance to include a delete and edit button. There are files for comments, but that button and pathway has not yet been completed. The login page is buggy and gives an alert that something is wrong, but then clicking on the profile page shows the user is logged in.
 
+Please visit my deployed webiste via [Heroku](https://mvc-tech-blogger.herokuapp.com/).
+
 ## Table of Contents
 - [License](#license)
 - [Installation](#installation)
@@ -33,7 +35,10 @@ If you'd like to use this upon copying this repo, please install the following d
     
 ## Usage
 Here is a screenshot of the multiple navigation screens on my webiste:
-
+![signup screen](./assets/signup%20screen.png)
+![homepage](./assets/home%20screen.png)
+![demo profile](./assets/demo%20profile.png)
+![demo profile](./assets/demo%20profile%202.png)
 
 
 ## Questions
