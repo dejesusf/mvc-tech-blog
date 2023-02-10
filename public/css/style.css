@@ -31,6 +31,7 @@ h3 {
 
 body {
   display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -41,12 +42,11 @@ header {
   min-height: 10vh;
   top: 0;
   width: 100%;
-  position: absolute;
   justify-content: center;
   align-items: center;
 }
 
-a {
+header a {
   justify-items: end;
   padding: 10px;
   text-decoration: none;
@@ -59,7 +59,7 @@ a:hover {
 }
 
 main {
-  background: var(--ltbrwn);  position: relative;
+  background: var(--ltbrwn);
   top: 10vh;
   width: 100%;
   min-height: 80vh;
@@ -71,9 +71,12 @@ footer {
   text-align: center;
   min-height: 10vh;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+footer a {
+  text-decoration: none;
   color: var(--ltbrwn);
 }
 

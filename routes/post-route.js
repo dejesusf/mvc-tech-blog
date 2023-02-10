@@ -30,7 +30,7 @@ router.post("/",(req,res) => {
   Post.create({
     UserId: req.session.userId,
     title: req.body.title,
-    post: req.body.content,
+    post: req.body.post,
   }).then(postData => {
     res.json(postData)
   }).catch(err => {
