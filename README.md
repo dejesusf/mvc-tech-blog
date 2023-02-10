@@ -13,8 +13,18 @@
 ![License Badge](https://img.shields.io/static/v1?label=license&message=None&color=blue)
 
 ## Installation
-Upon copying this repo, please install express, express-handlebars, mysql2, sequelize, path, and dotenv.
-1.
+Upon copying this repo, please install the following dependencies:
+- bcrypt
+- connect-session-sequelize
+- dontenv
+- express
+- express-handlebars
+- express-session
+- handlebars
+- mysql2
+- sequelize
+
+1. 
     
 ## Usage
 

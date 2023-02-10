@@ -21,7 +21,6 @@ router.get("/:id", (req,res) => {
   })
 })
 
-//protect this route so only logged in users can chirp
 router.post("/",(req,res) => {
   if(!req.session.userId){
     return res.status(403).json({msg:"login first to post!"})

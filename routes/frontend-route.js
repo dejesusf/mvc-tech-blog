@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const {Post,User} = require('../models');
+const {Post, User} = require('../models');
 
 router.get("/", (req,res) => {
   Post.findAll({
-    include:[User]
+    include: [User]
   }).then(postData => {
     console.log(postData)
     const hbsPost = postData.map(post => post.toJSON())
     console.log('==============================')
     console.log(hbsPost)
-    res.render("login", {
-      allPost: hbsPost
+    res.render("home", {
+      allPosts: hbsPost
     })
   })
 })
@@ -25,10 +25,6 @@ router.get("/signup",(req,res) => {
 })
 
 router.get("/",(req,res) => {
-  res.render("home")
-})
-
-router.get("/home",(req,res) => {
   res.render("home")
 })
 

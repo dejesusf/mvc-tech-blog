@@ -10,14 +10,14 @@ User.init({
         autoIncrement: true,
         primaryKey: true
     },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-            isEmail: true
-        }
-    },
+    // email: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //     unique: true,
+    //     validate: {
+    //         isEmail: true
+    //     }
+    // },
     username: {
         type: DataTypes.STRING,
         allowNull: false,
