@@ -28,6 +28,7 @@ h2 {
 h3 {
   font-size: 175%;
 }
+
 body {
   display: flex;
 }
@@ -73,7 +74,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  color: var(--ltbrwn)
+  color: var(--ltbrwn);
 }
 
 section {
@@ -85,7 +86,7 @@ section {
   min-width: 60;
 }
 
-form {
+#loginForm, #signupForm{
   background: var(--dkbrwn);
   display: flex;
   flex-direction: column;
@@ -106,5 +107,59 @@ button {
 }
 
 button:hover {
-  color: var(--dkbrwn)
+  color: var(--dkbrwn);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.avatar {
+  background: var(--dkbrwn);
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+  width: 40vh;
+  align-items: center;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#new-post-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-width: 60vh; */
+}
+
+#title-input {
+  width: 35vh;
+  resize: vertical;
+}
+
+#post-input {
+  width: 35vh;
+  height: 60vh;
+  resize: vertical;
+}
+
+.blurb {
+  background: var(--dkbrwn);
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  width: 145vh;
+  align-items: center;
+  padding: 10px;
+  border-radius: 25px;
 }
