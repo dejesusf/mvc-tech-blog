@@ -1,10 +1,15 @@
-<h2>HOMEPAGE</h2>
-<h3>ALL POSTS</h3>
+<container id="top">
+    <h2>HOMEPAGE</h2>
+    
+</container>
 
-{{#each allPosts}}
-<section class="post-box">
-    <h2>{{User.username}} posted:</h2>
-    <p>{{title}}</p>
-    <p>{{post}}</p>
-</section>
-{{/each}}
+<container class="home-blurb">
+    <h2>ALL POSTS</h2>
+   {{#each allPosts}}
+    <container class="post-box">
+        <h3>"{{title}}" by: {{User.username}}</h3>
+        <p id="text">{{post}}</p>
+    </container>
+    {{/each}} 
+</container>
+

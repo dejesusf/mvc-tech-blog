@@ -171,6 +171,19 @@ button:hover {
   text-align: center;
 }
 
+.home-blurb {
+  background: var(--dkbrwn);
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.home-blurb h2 {
+  text-align: center;
+}
+
 .post-box {
   margin: 10px;
 }
@@ -183,3 +196,7 @@ button:hover {
   padding: 10px;
 }
 
+#top {
+  padding: 10px;
+  text-align: center;
+}
