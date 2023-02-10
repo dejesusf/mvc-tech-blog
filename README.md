@@ -1,7 +1,9 @@
 # MVC Tech Blog
 
 ## Description
+Using a lot of dependencies, we were given the task to create a blog that users can post about whatever they wanted. The HTML of this website was written with handlebars. A new tech that we had learned about the utilizes partials to create a functioning website. All data is saved into a database and stored.
 
+This application is currently incomplete. I didn't have a chance to include a delete and edit button. There are files for comments, but that button and pathway has not yet been completed. The login page is buggy and gives an alert that something is wrong, but then clicking on the profile page shows the user is logged in.
 
 ## Table of Contents
 - [License](#license)
@@ -13,7 +15,7 @@
 ![License Badge](https://img.shields.io/static/v1?label=license&message=None&color=blue)
 
 ## Installation
-Upon copying this repo, please install the following dependencies:
+If you'd like to use this upon copying this repo, please install the following dependencies:
 - bcrypt
 - connect-session-sequelize
 - dontenv
@@ -24,9 +26,14 @@ Upon copying this repo, please install the following dependencies:
 - mysql2
 - sequelize
 
-1. 
+1. After installing the above dependencies, please update the '.env.EXAMPLE' file with your MySQL password.
+2. Run 'mysql -uroot -p' and enter in your password for MySQL.
+3. Run 'source db/schema.sql' to create the new database.
+4. Run 'node server.js' and this will be available locally.
     
 ## Usage
+Here is a screenshot of the multiple navigation screens on my webiste:
+
 
 
 ## Questions

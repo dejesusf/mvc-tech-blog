@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const {User,Post} = require('../models');
 const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 router.get("/", (req,res) => {
   User.findAll().then(userData => {
@@ -37,7 +38,6 @@ router.post("/",(req,res) => {
   }).then(userData => {
     req.session.userId= userData.id;
     req.session.username= userData.username;
-    req.session.userEmail= userData.email;
     res.json(userData)
   }).catch(err => {
     console.log(err);
@@ -54,7 +54,7 @@ router.post("/login", (req,res) => {
   if(!userData){
     return res.status(401).json({msg:"incorrect email or password"})
   } else {
-    if(bcrypt.compareSync(req.body.password,userData.password)){
+    if(bcrypt.compareSync(req.body.password, userData.password)){
       req.session.userId= userData.id;
       req.session.username= userData.username;
       req.session.userEmail= userData.email;
@@ -68,7 +68,5 @@ router.post("/login", (req,res) => {
       res.status(500).json({msg:"oh noes!",err})
    })
 })
-
-
 
 module.exports = router;
