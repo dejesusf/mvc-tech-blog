@@ -18,7 +18,8 @@
         {{#each Posts}}
           <container class="post-box">
             <h3>{{title}}</h3>
-            <p>{{post}}</p>
+            <p id="date">{{createdAt}}</p>
+            <p id="text">{{post}}</p>
           </container>
         {{/each}}
       </container>

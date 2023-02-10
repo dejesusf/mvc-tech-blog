@@ -148,6 +148,7 @@ button:hover {
 #title-input {
   width: 35vh;
   resize: vertical;
+
 }
 
 #post-input {
@@ -162,7 +163,22 @@ button:hover {
   flex-direction: column;
   min-height: 10vh;
   width: 145vh;
-  align-items: center;
   padding: 10px;
   border-radius: 25px;
+}
+
+.blurb h2 {
+  text-align: center;
+}
+
+.post-box {
+  margin: 10px;
+}
+
+#date {
+  font-size: 12px;
+}
+
+#text {
+  padding: 10px;
 }
